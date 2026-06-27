@@ -14,5 +14,9 @@ if exist "%DEST%" rmdir /s /q "%DEST%"
 mkdir "%DEST%"
 powershell -NoProfile -Command "Expand-Archive -Path \"$env:TEMP\vosk-model.zip\" -DestinationPath \"$env:TEMP\voskmodel\" -Force; $inner = Get-ChildItem \"$env:TEMP\voskmodel\" -Directory | Select-Object -First 1; Copy-Item -Path \"$($inner.FullName)\*\" -Destination \"%DEST%\" -Recurse -Force"
 
+REM Vosk's StorageService.unpack needs a 'uuid' file in the model dir; the
+REM plain model download omits it, so create one (any stable id works).
+echo whisperer-vosk-small-en-us-0.15> "%DEST%\uuid"
+
 echo Done. Model is in %DEST%
 pause
