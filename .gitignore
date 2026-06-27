@@ -1,0 +1,11 @@
+# Android / Gradle
+.gradle/
+build/
+*.apk
+local.properties
+.idea/
+*.iml
+captures/
+
+# Bundled offline model (large; fetched at build time, see README)
+app/src/main/assets/model/

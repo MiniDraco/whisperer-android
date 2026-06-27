@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Whisperer</string>
+    <string name="starting">starting…</string>
+    <string name="requesting_mic">requesting microphone…</string>
+    <string name="need_mic">microphone permission needed</string>
+    <string name="loading_model">loading model…</string>
+    <string name="ready">ready — tap Record and speak</string>
+    <string name="listening">listening…</string>
+    <string name="record">● Record</string>
+    <string name="stop">■ Stop</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="clear">Clear</string>
+    <string name="copied">Copied to clipboard</string>
+    <string name="notes_hint">Your dictation appears here — edit freely.</string>
+</resources>
