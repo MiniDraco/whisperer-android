@@ -7,7 +7,14 @@ field you can copy or share. No network, no account.
 ## Status — v0.1
 
 Working, installable APK: a dictation **notes app** with offline streaming
-speech-to-text.
+speech-to-text, plus an **A-B loop audio player**.
+
+### A-B loop player (transcription workstation)
+Load an audio file and drag the **two timeline handles** to mark a loop region;
+it repeats that span forever. The player and the recognizer run independently,
+so you can **loop a passage while you dictate at the same time** — load → set the
+two handles → Play → Record, and talk over the loop. (Use headphones so the loop
+doesn't bleed into the mic.)
 
 - **Engine:** [Vosk](https://alphacephei.com/vosk/) (Kaldi) running fully
   on-device with prebuilt native libs — no NDK needed to build.

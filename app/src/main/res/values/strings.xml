@@ -14,4 +14,8 @@
     <string name="clear">Clear</string>
     <string name="copied">Copied to clipboard</string>
     <string name="notes_hint">Your dictation appears here — edit freely.</string>
+    <string name="load_audio">Load audio</string>
+    <string name="play">▶</string>
+    <string name="pause">❚❚</string>
+    <string name="no_audio">No audio — load a file, then drag the two handles to set the loop.</string>
 </resources>
