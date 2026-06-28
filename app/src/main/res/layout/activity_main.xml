@@ -99,18 +99,18 @@
         android:textSize="15sp"
         android:textStyle="italic" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/recordBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:text="@string/record" />
 
-        <Button
-            android:id="@+id/recordBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="@string/record" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/copyBtn"
@@ -118,6 +118,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:maxLines="1"
+            android:textSize="13sp"
+            app:cornerRadius="10dp"
             android:text="@string/copy" />
 
         <Button
@@ -126,6 +131,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:maxLines="1"
+            android:textSize="13sp"
+            app:cornerRadius="10dp"
             android:text="@string/share" />
 
         <Button
@@ -134,6 +145,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:maxLines="1"
+            android:textSize="13sp"
+            app:cornerRadius="10dp"
             android:text="@string/clear" />
     </LinearLayout>
 </LinearLayout>
